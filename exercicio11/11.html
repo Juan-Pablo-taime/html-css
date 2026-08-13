@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>midias</title>
+</head>
+<body>
+    <h1>imagem dinamica</h1>
+    <p>tente abrir esse site em varios dispositivos diferentes</p>
+
+    <picture>
+        <source media="(max-width: 1000px)" srcset="https://media1.tenor.com/m/EsfK9TdObxAAAAAd/gem-alarm-gem-alert.gif" type="image/gif">
+        <source media="(max-width: 1200px)" srcset="imagem/esperando.png" type="image/png">
+        <img src="imagem/paciente.png" alt="G"> <!-- imagem padrão deve ser a ultima e as mudanças precisam ser sempre uma em cima da outra. precisa de um espaçamento de exatamente 25px para ficar exatamente o tamanho do limite da imagem-->
+    </picture>
+
+    <h1>reproduzindo audio</h1>
+    <p>vamos aprender a reproduzir audios em HTML5</p>
+    <audio src="midia/WhatsApp Audio 2025-04-26 at 14.34.31.ogg" controls autoplay muted> quebrando a cama</audio>
+    
+    <audio preload="metadata" controls autoplay muted>
+        <source src="midia/WhatsApp Audio 2025-04-26 at 14.34.31.ogg"  type="audio/ogg" >
+        <p>infelizmente seu navegador não funfa audio</p>
+    </audio>
+</body>
+</html>

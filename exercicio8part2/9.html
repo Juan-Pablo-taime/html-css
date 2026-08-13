@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>outras formatações</title>
+</head>
+<body>
+    <h1>Outras formatações</h1>
+    <h2>codigo fonte</h2>
+    <p>o comando "code" é usado para deixar as frases monoespaçadas <code>muito bom para escrever codigos</code></p>
+    <p><pre>
+        <code>
+aluno = {
+"nome": "João",
+"idade": 20,
+"curso": "Engenharia"
+}
+
+aluno["matriculado"] = True
+
+for chave, valor in aluno.items():
+print(f"{chave}: {valor}")</code>
+    </pre></p>
+    <p>sem o "pre" e o "code" seria impossivel escrever esse codigo sem identação e com monoespaço respectivamente</p>
+    <p>em citações é melhor usar o "q" ao inves de botar as aspas manualmente já que o compilador irá compreender que "q" significa citação. <q>Caguei nas calças e estou borrado</q> <br>
+    existe tambem citação longa e mais complexa geralmente usada para livros 
+    <blockquote cite="https://www.goodreads.com/quotes/182429-if-a-person-has-ugly-thoughts-it-begins-to-show">If a person has ugly thoughts, it begins to show on the face. And when that person has ugly thoughts every day, every week, every year, the face gets uglier and uglier until you can hardly bear to look at it.
+
+A person who has good thoughts cannot ever be ugly. You can have a wonky nose and a crooked mouth and a double chin and stick-out teeth, but if you have good thoughts it will shine out of your face like sunbeams and you will always look lovely.</blockquote>
+    </p>
+    <p>é possivel dar a fonte desssa citação tbm usando "cite" e colocando o endereço da fonte, isso é mais para dar contexto ao compilador o usuario não será afetado</p>
+    <h2>abreviações</h2>
+    <p>tem como deixar claro o que significa uma abreviação usando "abbr" <abbr title="hypertext markup language">html</abbr> <abbr title="cascading style sheets">css</abbr></p>    
+</body>
+</html>

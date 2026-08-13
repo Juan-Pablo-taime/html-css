@@ -1,0 +1,28 @@
+@charset "UTF-8";
+/* html ID = # CSS
+ html class = . CSS*/
+body {
+    background-color: #121084;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.principal {
+    color: #D91EFF;
+
+}
+
+.aprend{
+    color: #1E55FF;
+}
+.basico{
+    color: #682BFF;
+}
+
+.intermediario {
+    color: #8E1BE8;
+}
+
+.avancado{
+    color: #1F1BE8;
+    font-style: italic;
+}

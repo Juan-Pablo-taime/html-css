@@ -1,0 +1,197 @@
+@charset "UTF-8";
+
+ @font-face {
+            font-family: cool;
+            src: url(fontes/Coolvetica\ Rg\ Cond.otf);
+        }
+        @font-face {
+            font-family: idroid;
+            src: url(fontes/idroid.otf);
+        }
+
+        :root {
+            --cor0: #c5ebd6;
+            --cor1: #83e1ad;
+            --cor2: #3ddc84;
+            --cor3: #2fa866;
+            --cor4: #1a5c37;
+            --cor5: #063d1e;
+        }
+
+
+        body {
+           display: flex;
+            flex-direction: column; /* Coloca os elementos um embaixo do outro, não lado a lado */
+            min-height: 100vh; /* Garante que o body tenha, no mínimo, 100% da altura da tela */
+            margin: 0; /* Remove margens padrão que podem criar barras de rolagem */
+            background-color: #84e1ad;
+        }
+        header {
+            background-image: -moz-linear-gradient(rgb(60, 215, 130), rgba(0, 0, 0, 0.732));
+            color: white;      
+            box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.395);  
+            padding-bottom: 2px;
+        }
+        header > nav > a {
+            text-decoration: none;
+            color: #f0f3f1;
+           margin-left: 20px;
+           font-weight: bold;
+           transition-duration: 0.5ms;
+           
+        }
+
+        header > nav > a:hover {
+            background-color: #3ddc84;
+            color: #063d1e;
+        }
+
+
+        header > h1{
+            font-family: cool;
+            font-size: 50px;
+            text-align: center;
+            padding-top: 15px;
+            margin-top: 0px;
+            margin-bottom: 33px;
+            text-shadow: 1px 1px black;
+        }
+        header > p {
+            text-align: center;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px black;
+            
+            
+        }
+        main {
+            flex: 1; /* Isso diz ao main: "Cresça e ocupe todo o espaço vazio disponível" */
+            margin: auto;
+            max-width: fit-content;
+            background-color: white;
+            padding: 10px 15px;
+            box-shadow: 0px 0px 10px black;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+        main > * {
+            max-width: 800px;
+            min-width: 320px;
+        }
+        main > h2 {
+            font-family: idroid;
+            color: rgb(27, 92, 58);
+            
+            
+        }
+        main > p {
+            text-indent: 50px;
+            text-align: justify;
+            font-size: 1em;
+            line-height: 1em;
+           
+
+        }
+
+        main > p > a {
+
+            text-decoration: none;
+            color: black;
+
+        }
+        
+        main > h3 {
+            font-family: idroid;
+            color: rgb(27, 92, 58);
+            background-image: -moz-linear-gradient(to right, rgba(51, 174, 110, 0.44), transparent );
+            
+        }
+
+        main > picture > img {
+            width: 100%;
+            display: flex ;
+            align-content: center;
+           
+            
+        }
+
+        main > picture > img.pequena {
+            max-width: 360px;
+        }
+
+        main strong {
+            color: #063d1e;
+            font-weight: bold;
+           
+        }
+
+        main a {
+             background-color: #84e1ad;
+            padding: 2px;
+        }
+
+        main a:hover {
+            color: red;
+        }
+
+        main > div.video {
+            margin: 0px -20px 30px -20px;
+            background-color: red;
+            padding: 20px;
+            padding-bottom: 59%;
+            position: relative;
+           
+            
+
+        }
+
+        div.video > iframe {
+            position: absolute;
+            top: 5%;
+            left: 5%;
+            width: 90%;
+            height: 90%;
+        }
+
+
+
+        main > aside  {
+            padding-bottom: 3px;
+            background-color: rgba(51, 178, 112, 0.312);
+            border-radius: 20px;
+        }
+        
+        main > aside > h4 {
+            color: white;
+            margin: 0;
+            padding: 10px 0px 10px 10px;
+            background-color:  rgb(51, 178, 112);
+            border-top-right-radius: 20px;
+            border-top-left-radius: 20px;
+           
+        }
+        main > aside > p {
+            text-indent: 50px;
+            text-align: justify;
+            margin: 10px;
+            
+        }
+
+        main > aside > ul {
+            list-style-type: '\2714\00A0\00A0';
+            list-style-position: inside;
+            columns: 2;
+            text-decoration: underline;
+        }
+
+        footer {
+            min-height: 40px;
+            margin-bottom: 0px;
+            margin-top: 15px;
+            background-color: rgb(27, 92, 58);
+        }
+        footer > p {
+            margin: 0;
+            text-align: center;
+            padding-top: 10px;
+            
+        }
