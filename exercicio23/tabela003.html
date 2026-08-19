@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio 3 de tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            border-collapse: collapse;
+            width: 300px;
+        }
+        td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>mesclagem de células</h1>
+    <table>
+        <tr>
+            <td>a</td>
+            <!-- essa porra é muito estranha mas por causa de algum corno colspan expande linha e rowspan expande coluna. Acho que a linha de pensamento dos desenvolvedores era de que colspan significava que iria expandir uma coluna consequentemente engordando a coluna e rowspan expandia para uma linha a mais assim engordando para baixo. Com isso causando uma estranheza filhadapta-->
+            <td colspan="2">b</td>
+        </tr>
+        <tr>
+            <td rowspan="2">d</td>
+            <td>e</td>
+            <td rowspan="3">f</td>
+        </tr>
+        <tr>
+            
+            <td>h</td>
+            
+        </tr>
+        <tr>
+            <td colspan="2">j</td>
+            
+            
+        </tr>
+    </table>
+</body>
+</html>
