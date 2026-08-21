@@ -6,11 +6,20 @@
     <style>
         table {
             border-collapse: collapse;
-            width: 500px;
+            width: 530px;
         }
         td, th {
             border: 3px solid black;
             text-align: center;
+        }
+        .cinza, #esquisito {
+            background-color: rgb(116, 115, 115);
+            color: white;
+        }
+
+        
+        .esquerda{
+            text-align: left;
         }
     </style>
     <title>part2 do desafio</title>
@@ -19,14 +28,60 @@
     <table>
         
         <tr>
-            <th rowspan="2">area</th>
-            <th rowspan="2">disciplina</th>
-            <th colspan="2">notas</th>
-            <th>média</th>
+            <th rowspan="2" class="cinza">area</th>
+            <th rowspan="2" class="cinza">disciplina</th>
+            <th colspan="2" class="cinza">notas</th>
+            <th rowspan="2" class="cinza">média</th>
         </tr>
         <tr>
-            <th>nota1</th>
-            <th>nota2</th>
+            <th class="cinza">nota1</th>
+            <th class="cinza">nota2</th>
+        </tr>
+        <tr>
+            <th rowspan="4">exatas</th>
+            <td class="esquerda">matemática
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td class="esquerda">fisica</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td class="esquerda">quimica</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td class="esquerda">biologia</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <th colspan="4" class="esquerda" id="esquisito">media exatas</th>
+            <td class="cinza">0</td>
+        </tr>
+        <tr>
+            <th rowspan="2">humanas</th>
+            <td>historia</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>geografia</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <th colspan="4" class="esquerda" id="esquisito">media humanas</th>
+            <td class="cinza">0</td>
         </tr>
     </table>
 </body>
