@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+/*todas as demais midias */
+
+/*typical device breakpoints (tamanho do width médio de aparelhos)
+
+Mobile / Extra Small (0px to 576px / 640px)
+
+Small Tablet / Landscape Phone (640px to 767px)
+
+Tablet (768px to 1023px)
+
+Laptop / Small Desktop (1024px to 1279px)
+
+Desktop (1280px to 1535px)
+
+Extra Large Desktop (1536px and up)
+*/
+
+@media print /*impressora*/{
+    *{
+         font-family: 'Courier New', Courier, monospace;
+    }
+    body{
+        background-image: url(../../imagens/back-print.jpg); /*não funfa pois num deixa :(*/
+       
+        
+    }
+    main{
+        border: 2px solid black;
+        width: 90vw;
+    }
+    main h1{
+        text-shadow: none;
+        color: black;
+    }
+    main::after{
+        content: "site feito por taime";
+        text-decoration: overline;
+    }
+    img#impresso{
+        display: block;
+    }
+    img#espertofone{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1280px)/*tableet*/{
+    body{
+        background-image: url(../../imagens/back-tablet.jpg);
+        img#espertofone{
+            display: none;
+        }
+        img#tableta{
+            display: block;
+        }
+    }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1535px)/*desktop*/{
+    body{
+        background-image: url(../../imagens/back-pc.jpg);
+        img#PERSONALCOMPUTER{
+            display: block;
+        }
+        img#espertofone{
+            display: none;
+        }
+    }
+}
+
+@media screen and (min-width: 1535px)/*telas mastodonticas*/{
+    body{
+        background-image: url(../../imagens/back-tv.jpg);
+        img#silviosantos{
+            display: block;
+        }
+        img#espertofone{
+            display: none;
+        }
+    }
+    
+}
+
